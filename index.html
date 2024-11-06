@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Usuários</h1>
+  </header>
+  <main>
+    <!-- Formulário para cadastro de usuários -->
+    <section>
+      <h2>Cadastrar Usuário</h2>
+      <form id="userForm" onsubmit="registerUser(); return false;">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Digite o nome" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite o email" required>
+        <button type="enviar">Cadastrar</button>
+      </form>
+    </section>
+    <!-- Tabela para listar os usuários -->
+    <section>
+      <h2>Lista de Usuários</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelausers">
+          <!-- Linhas de usuários serão adicionadas pelo JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
